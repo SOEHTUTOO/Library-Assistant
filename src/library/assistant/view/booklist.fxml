@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.controller.BooklistController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="bookListTable" prefHeight="400.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="bookIDColumn" prefWidth="150.0" text="BOOK ID" />
+                  <TableColumn fx:id="bookTitleColumn" prefWidth="150.0" text="BOOK TITLE" />
+                  <TableColumn fx:id="bookAuthorColumn" prefWidth="150.0" text="BOOK AUTHOR" />
+                  <TableColumn fx:id="bookPublisherColumn" prefWidth="150.0" text="BOOK PUBLISHER" />
+                  <TableColumn fx:id="bookAvaiColumn" prefWidth="150.0" text="Available" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem fx:id="deleteBookMenu" mnemonicParsing="false" onAction="#deleteBook" text="Delete" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></TableView>
+            <HBox prefHeight="100.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="editBtn" contentDisplay="CENTER" onAction="#editBookInfo" prefHeight="100.0" prefWidth="290.0" text="Edit" />
+                  <JFXButton fx:id="closeBookListBtn" contentDisplay="CENTER" onAction="#closeBookList" prefHeight="100.0" prefWidth="290.0" text="Close" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

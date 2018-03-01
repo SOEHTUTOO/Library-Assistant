@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2018, 2:43:19 PM
+    Author     : SPELL
+*/
+
+*{
+    
+    -fx-primary : #2a2e37;
+    -fx-secondary : #ffff8d;
+    -fx-primarytext : #b2b2b2;
+    
+}
+
+.root{
+    
+    -fx-background-color: -fx-primary;
+    
+}
+
+.button{
+    
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    
+}
+
+.custom-buton{
+    
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    
+}
+
+.tab{
+    
+    -fx-background-color: -fx-primary;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.menu-bar{
+    -fx-background-color: -fx-primary;
+ }
+
+.menu .label{   
+    -fx-text-fill: white;
+}
+
+.context-menu{
+    -fx-background-color: derive(-fx-primary,20%);
+}
